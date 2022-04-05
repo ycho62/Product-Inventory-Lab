@@ -9,6 +9,19 @@ public class Whiskey {
     private int qty;
     private double price;
 
+    @Override
+    public String toString() {
+        return "Whiskey{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
+                ", region='" + region + '\'' +
+                ", size=" + size +
+                ", qty=" + qty +
+                ", price=" + price +
+                '}';
+    }
+
     public Whiskey(int id, String name, String brand, String region, int size, int qty, double price) {
         this.id = id;
         this.name = name;
@@ -68,6 +81,7 @@ public class Whiskey {
     public void setSize(int size) {
         this.size = size;
     }
+
     public void setQty(int qty) {
         this.qty = qty;
     }

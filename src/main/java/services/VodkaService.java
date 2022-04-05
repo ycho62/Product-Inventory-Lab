@@ -43,6 +43,7 @@ public class VodkaService {
         Vodka[] list = new Vodka[inventory.size()];
         for (int i= 0; i<list.length; i++){
             list[i] = inventory.get(i);
+            System.out.println(list[i].toString());
         }
 
         return list;
@@ -57,4 +58,26 @@ public class VodkaService {
 //        // should remove the object with this id from the ArrayList if exits and return true.
 //        // Otherwise return false
     }
+
+    public void updateVodkaQty(int id, int amount){
+        inventory.get(id).setQty(amount);
+    }
+
+    public void updateVodkaBrand(int id, String brand){
+        inventory.get(id).setBrand(brand);
+    }
+
+    public void updateVodkaRegion(int id, String region){
+        inventory.get(id).setRegion(region);
+    }
+
+    public void updateVodkaSize(int id, int size){
+        inventory.get(id).setSize(size);
+    }
+
+    public void updateVodkaPrice(int id, double price){
+        inventory.get(id).setPrice(price);
+    }
+
+
 }

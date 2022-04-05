@@ -9,6 +9,19 @@ public class Vodka {
     private int qty;
     private double price;
 
+    @Override
+    public String toString() {
+        return "Vodka{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", brand='" + brand + '\'' +
+                ", region='" + region + '\'' +
+                ", size=" + size +
+                ", qty=" + qty +
+                ", price=" + price +
+                '}';
+    }
+
     public Vodka(int id, String name, String brand, String region, int size, int qty, double price) {
         this.id = id;
         this.name = name;
